@@ -1,0 +1,40 @@
+﻿
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
+
+.navbar-inverse {
+    background: #2c3e50;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+
+/*content keeps everything within the body and controls the white box of the container*/
+.content {
+    width: 50%;
+    min-height: 10px;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1px;
+    
+}
+
+.tableCentre1 {
+    /*margin-left: 10px;*/
+    margin: 0 auto;
+    
+    padding: 30px;
+    align-content: center;
+}

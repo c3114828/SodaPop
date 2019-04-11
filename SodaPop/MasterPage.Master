@@ -8,53 +8,56 @@
     <link rel="stylesheet" type="text/css" href="~/Content/Master.css" runat="server"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .container {
+            height: 469px;
+        }
+    </style>
 </head>
 <body>
     <form runat="server">
       <div class="wrapper" runat="server">
         <div class="container" runat="server">
             <header>
-                <!--Logo made in photoshop-->
-                <a href="Main.aspx"><asp:Image ID="imgLogo" runat="server" ImageUrl="~/IMG/Soda.png" AlternateText="SodaPop Logo" BorderStyle="NotSet" Height="100px" Width="399px" ImageAlign="Middle" /></a>
+                <!--logo Source https://www.picpng.com/image/soda-pop-can-aluminum-cola-png-116706 -->
+<%--                <a href="Main.aspx"><asp:Image ID="imgLogo" runat="server" ImageUrl="~/IMG/SodaImage4.png" AlternateText="SodaPop Logo" BorderStyle="NotSet" Height="168px" Width="135px" ImageAlign="Right" /></a>--%>
+                <nav class="nav_style" id="Nav1" runat="server">
+                    <ul runat="server" style="height: 31px; width: 1444px">
+                       <li runat="server">
+                             <a href="Main.aspx"><asp:Image ID="Image2" runat="server" ImageUrl="~/IMG/SodaImage4.png" AlternateText="SodaPop Logo" BorderStyle="NotSet" Height="28px" Width="41px" ImageAlign="Middle" /></a>
+                        </li>
+                        <li runat="server">
+                            <div class="dropdown">
+                              <a>Shop Soda</a>
+                              <div class="dropdown-content">
+                                  <ul>
+                                    <li><a href="Cola.aspx">Cola</a></li>
+                                    <li><a href="Lemonade.aspx">Lemonade</a></li>
+                                    <li><a href="Diet.aspx">Diet</a></li>
+                                    <li> <a href="Energy.aspx">Diet</a></li>
+                                  </ul>
+                              </div>
+                            </div> 
+                        </li>                
+                        <li runat="server">
+                            <a href="ShoppingCart.aspx">Shopping Cart</a>
+                        </li>
+                        <li runat="server">
+                            <a href="Registration.aspx">Register</a>
+                        </li>
+                        <li>
+                            <a href="About.aspx">About Us</a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+                
             </header>
+
             <!--The Navbar is mostly organised through an unordered list and the css code behind it with an extra element for a dropdown list-->
-            <nav class="nav_style" id="menu" runat="server">
-                <ul runat="server">
-                    <li runat="server">
-                        <div class="dropdown">
-                          <a>Products</a>
-                          <div class="dropdown-content">
-                            <a href="MenProducts.aspx">Mens</a>
-                            <a href="WomenProducts.aspx">Womens</a>
-                            <a href="YouthProducts.aspx">Youth</a>
-                          </div>
-                        </div> 
-                    </li>
-                    <li runat="server">
-                        <a href="PurchaseHistory.aspx">History</a>
-                    </li>
-                    <li runat="server">
-                        <a href="ShoppingCart.aspx">Shopping Cart</a>
-                    </li>
-                    <li runat="server">
-                        <a href="Registration.aspx">Register</a>
-                    </li>
-                    <li>
-                        <a href="About.aspx">About Us</a>
-                    </li>
-                    <!--Checks wether or not the session "log" variable has anything in it to either display the login or logout button respectively -->
-                    <li runat="server">
-                        <% if (Session["log"] == null){ %>
-                            <asp:Button  runat="server" Text="Login" OnClick="userLogin" />
-                        <%} else { %> 
-                            <asp:Button  runat="server" Text="Logout" OnClick="userLogout" />   
-                        <%} %>
-                    </li>
-                </ul>
-            </nav>
-            <!--All the content goes into here and are on seperate pages-->
+            
         <asp:ContentPlaceHolder ID="BodyContent" runat="server">
-        
+       
         </asp:ContentPlaceHolder>
         
          </div>

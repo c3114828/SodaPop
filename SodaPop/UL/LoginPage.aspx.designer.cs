@@ -7,45 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SodaPop {
+namespace SodaPop.UL {
     
     
-    public partial class MasterPage {
+    public partial class LoginPage {
         
         /// <summary>
-        /// head control.
+        /// emailTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox emailTxtBx;
         
         /// <summary>
-        /// Nav1 control.
+        /// passwordTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Nav1;
+        protected global::System.Web.UI.WebControls.TextBox passwordTxtBx;
         
         /// <summary>
-        /// Image2 control.
+        /// RegisterLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.HyperLink RegisterLbl;
         
         /// <summary>
-        /// BodyContent control.
+        /// logInBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder BodyContent;
+        protected global::System.Web.UI.WebControls.Button logInBtn;
     }
 }

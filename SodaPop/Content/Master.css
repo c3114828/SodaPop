@@ -1,13 +1,32 @@
-﻿body{
+﻿body {
+    margin: 4px;
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+    margin-left: 50px;
+    margin-right: 0px;
+    max-width: 100%;
+    background-color: white;
+    display: block;
+    margin: 8px;
 
 }
+
+body:focus{
+    outline: none;
+}
+
+.wrapper {
+    width: 950px;
+    margin: auto;
+}
+
 #topContent {
     text-align: center;
     text-transform: uppercase;
     background-color: white;
-    color: White;
+    color: white;
     font-size: x-large;
-    font-family: 'Righteous', cursive;
+    font-family: Mina Sans-Serif;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -22,48 +41,52 @@
     text-align: left;
     background-color: white;
 }
+
+
 or the properties of the unordered list in the nav bar*/
 .nav_style ul {
-margin-top: 0%;
-margin-right: auto;
-margin-bottom: 0px;
-margin-left: auto;
-padding-top: 0px;
-padding-right: 0px;
-padding-bottom: 15px;
-padding-left: 0px;
-width: 100%;
+    margin-top: 0%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    width: 100%;
 }
 /*for the individual elements of the navbar, the transitionon point is for when it changes state how long it takes to transition to the new colour*/
 .nav_style ul li {
-list-style: none;
-float: left;
-margin-right: auto;
-font-family: 'Righteous', cursive;
-color:black;
-letter-spacing: 2.5px;
-margin-left: auto;
-text-align: center;
-width: 15%;
-transition: all 0.3s linear;
-font-size: 15px;
+    list-style: none;
+    float: left;
+    margin-right: auto;
+    font-family: Mina Sans-Serif;
+    letter-spacing: 2.5px;
+    margin-left: 0px;
+    text-align: center;
+    width: 19%;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    height: 34px;
 }
 
-.nav_style ul li:hover {
-    color: #717070;
-    cursor: pointer;
-}
+    .nav_style ul li:hover {
+        color: #717070;
+        cursor: pointer;
+    }
 
-.nav_style ul li:visited {
-    color: black;
-}
+    .nav_style ul li:visited {
+        color: black;
+    }
 
 
 header {
-    height: 100px;
+    height: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Righteous', cursive;
+    font-family: Mina Sans-Serif;
+    width: 1492px;
+    margin-right: 0px;
 }
 
 /*content keeps everything within the body and controls the white box of the container*/
@@ -73,6 +96,7 @@ header {
     margin: 10px 0px 10px 0px;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: white;
 }
 /*For the things that we want to be at the bottom of the page*/
 footer {
@@ -93,12 +117,14 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    color: black;
 }
 
 a {
-    color: inherit;
+    color: black;
+    border: none;
 }

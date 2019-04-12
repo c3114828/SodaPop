@@ -27,7 +27,7 @@
                     Purchases History
                 </td>
                 <td>
-                    <asp:HyperLink NavigateUrl="#" Text="View" runat="server" />
+                    <asp:HyperLink NavigateUrl="purchaseHistory.aspx" Text="View" runat="server" />
                 </td>
             </tr>
             <tr>

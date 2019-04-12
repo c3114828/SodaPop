@@ -11,10 +11,11 @@ namespace SodaPop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            // This creates a session if the user has logged in and also changes the url to the myaccountpage.aspx to view their account
             if (Session["Email"] != null)
             {
                 loggedInLbl.Text = Session["Email"].ToString();
+                loggedInLbl.NavigateUrl = "~/UL/MyAccountPage.aspx";
 
             }
 

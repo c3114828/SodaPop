@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SodaPop.Models
+namespace SodaPop.DL
 {
     public class Product { 
     
@@ -12,18 +12,22 @@ namespace SodaPop.Models
 
         public String ProductDescription    { get; set; }
 
-        public Int32 ProductQuantity          { get; set; }
+        public Int32 ProductQuantity        { get; set; }
         public Double ProductPrice          { get; set; }
         public String ProductBrand          { get; set; }
-        public String ProductImage          { get; set; }
+        byte[] ProductImage                 { get; set; }
+        public Int32 OrderID                { get; set; }
 
-    public Product()
+ 
+
+
+        public Product()
         {
 
         }
 
 
-        public Product(int pid, String pn, String pd, int pq, double pp, String pb, String pi)
+        public Product(int pid, String pn, String pd, int pq, double pp, String pb, byte[] pi, Int32 oid)
         {
             this.ProductID = pid;
             this.ProductName = pn;
@@ -32,6 +36,8 @@ namespace SodaPop.Models
             this.ProductPrice = pp;
             this.ProductBrand = pb;
             this.ProductImage = pi;
+            this.OrderID = oid;
         }
+
     }
 }

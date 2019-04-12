@@ -11,14 +11,16 @@ namespace SodaPop.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
 
         protected void logInBtn_Click1(object sender, EventArgs e)
         {
+            //Creates a session to give 'email' session a value which in turn will change thelink 'log in' to the users email address
             Session["Email"] = emailTxtBx.Text;
             Response.Redirect("~/UL/MyAccountPage.aspx");
+            Session["LoggedIn"] = true;
 
         }
     }

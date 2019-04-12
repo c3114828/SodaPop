@@ -144,12 +144,13 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Models\CartModel.cs" />
-    <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\Supplier.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="DL\Admin.cs" />
+    <Compile Include="DL\CartModel.cs" />
+    <Compile Include="DL\Category.cs" />
+    <Compile Include="DL\Order.cs" />
+    <Compile Include="DL\Product.cs" />
+    <Compile Include="DL\Supplier.cs" />
+    <Compile Include="DL\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -221,6 +222,13 @@
     <Compile Include="UL\Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\purchaseHistory.aspx.cs">
+      <DependentUpon>purchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\purchaseHistory.aspx.designer.cs">
+      <DependentUpon>purchaseHistory.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\bootstrap-theme.css" />
@@ -261,6 +269,7 @@
     <Content Include="UL\Products.aspx" />
     <Content Include="UL\Registered.aspx" />
     <Content Include="UL\Registration.aspx" />
+    <Content Include="UL\purchaseHistory.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -279,7 +288,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="BL\" />
-    <Folder Include="DL\" />
+    <Folder Include="DL\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

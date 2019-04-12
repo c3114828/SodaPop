@@ -9,26 +9,22 @@ namespace SodaPop.Models
     {
             public int CategoryID { get; set; }
 
-            public string BuildingLabel { get; set; }
+            public string CategoryName { get; set; }
 
-            public string BuildingName { get; set; }
 
-            public int RoomQty { get; set; }
+        //public Map Image
 
-            //public Map Image
+        public void CategoryModel()
+        {
 
-            //public BuildingModel()
-            //{
+        }
 
-            //}
+        public void CategoryModel(int cid, string cn)
+        {
+            this.CategoryID = cid;
+            this.CategoryName = cn;
+            
+        }
 
-            //public BuildingModel(int bid, string bl, string bn, int rq)
-            //{
-            //    this.BuildingID = bid;
-            //    this.BuildingLabel = bl;
-            //    this.BuildingName = bn;
-            //    this.RoomQty = rq;
-            //}
-        
     }
 }

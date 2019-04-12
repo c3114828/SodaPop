@@ -7,5 +7,6 @@ namespace SodaPop.Models
 {
     public class Order
     {
+        public orderNumber
     }
 }

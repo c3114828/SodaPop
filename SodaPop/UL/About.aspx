@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="SodaPop.UL.About" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content">
@@ -7,30 +9,20 @@
             <h2>Contact Us</h2>
         </div>
         <div class="text_container_2col">
-            <h3>For all Order or personal Enquiries</h3>
+            <h3>Order and purchasing enquiries</h3>
             <p>
                 <strong>For all enquiries pertaining to Orders</strong><br />
-                Phone: 754142254689<br />
-                or Email: Orders@Japallum.com.au<br />
+                Phone: 4565132185<br />
+                Email: info@sodapop.com<br />
 
-                <strong>For all other personal enquiries</strong><br />
-                Email: Enquiries@Japallum.com.au
-                <br /><br />
-                <strong>If you are returning an order to us please use the following address</strong> 
-            </p>
+                 </p>
             <address>
-                149 Swiss Drive<br />
-                Otamatane<br />
+                90 <br />
+                Peerson st<br />
                 New South Wales <br />
-                2560
+                2290
             </address>
         </div>
-        <div class="text_container_2col">
-            <p>
-                <strong>For all business enquiries</strong><br />
-                Please Email: Japallumbiz@Japallum.com<br />
-                We would love to hear from you about any possibvle business opportunities that might be advantageous for both ourselves and you.
-            </p>
-        </div>
+      
     </div>
 </asp:Content>

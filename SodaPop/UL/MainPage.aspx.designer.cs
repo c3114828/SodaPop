@@ -7,54 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SodaPop {
+namespace SodaPop.UL {
     
     
-    public partial class Main {
+    public partial class Default2Main {
         
         /// <summary>
-        /// head control.
+        /// colaImgButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.ImageButton colaImgButton;
         
         /// <summary>
-        /// form1 control.
+        /// lemonadeImgButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.ImageButton lemonadeImgButton;
         
         /// <summary>
-        /// loggedInLbl control.
+        /// SignUpID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink loggedInLbl;
+        protected global::System.Web.UI.WebControls.HyperLink SignUpID;
         
         /// <summary>
-        /// imgLogo control.
+        /// LogInId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLogo;
+        protected global::System.Web.UI.WebControls.HyperLink LogInId;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// signInID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.HyperLink signInID;
     }
 }

@@ -229,6 +229,13 @@
     <Compile Include="UL\purchaseHistory.aspx.designer.cs">
       <DependentUpon>purchaseHistory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\bootstrap-theme.css" />
@@ -270,6 +277,7 @@
     <Content Include="UL\Registered.aspx" />
     <Content Include="UL\Registration.aspx" />
     <Content Include="UL\purchaseHistory.aspx" />
+    <Content Include="UL\ShoppingCart.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

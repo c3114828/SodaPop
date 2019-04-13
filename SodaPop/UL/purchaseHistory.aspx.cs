@@ -22,9 +22,6 @@ namespace SodaPop.Views
             }
         }
 
-        protected void orderHistoryGrd_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

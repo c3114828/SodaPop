@@ -11,21 +11,34 @@ namespace SodaPop.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Re-directs to login page if there is no user logged in
+           
             if (Session["email"] == null)
             {
                 Response.Redirect("LoginPage.aspx");
             }
-            else
+            if (!IsPostBack)
             {
+                try
+                {
+                    DataSet ds = BL.getData();
 
-                Products cocaCola = new Products(001, "Cola", "375ml Coca Cola Can", 1, "3.00", "Coca Cola", "~/IMG/soda-bottle.png");
-                // Pants image sourced from - https://thegenericclothingstore.weebly.com/uploads/6/3/9/9/6399250/s974624006995353717_p5_i1_w640.jpeg
-                List<Products> sodaProducts = new List<Products>();
-                sodaProducts.Add(cocaCola);
-                
-                Session["CocaCola"] = sodaProducts;
+                    Repeater1.DataSource = BL.getData();
+                    Repeater1.DataBind();
+                }
+                catch (Exception ex)
+                {
+                    errorlbl.Text = "Cannot Display products  : " + ex.Message;
+                }
             }
+            //else
+            //{
+
+            //    Products cocaCola = new Products(001, "Cola", "375ml Coca Cola Can", 1, "3.00", "Coca Cola", "~/IMG/soda-bottle.png");
+            //    List<Products> sodaProducts = new List<Products>();
+            //    sodaProducts.Add(cocaCola);
+
+            //    Session["CocaCola"] = sodaProducts;
+            //}
             // Use to get gridview of products
 
 
@@ -33,7 +46,53 @@ namespace SodaPop.UL
             //{
             //    return (List<Products>)Session["Products"];
 
-            //}
+            //}.
+
+
+
+        }
+        protected void searchbutton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Display data via search bar text
+                Repeater1.DataSource = BL.search(searchBar.Text);
+                Repeater1.DataBind();
+            }
+            catch (Exception ex)
+            {errorlbl.Text = "Error try to seach products : " + ex.Message;}
+        }
+        protected void btn_showAll(object sender, EventArgs e)
+        {
+            try
+            {
+                Repeater1.DataSource = BL.getData();
+                Repeater1.DataBind();
+            }
+            catch (Exception ex)
+            {errorlbl.Text = "Error : " + ex.Message;}
+        }
+        protected void Repeater1_ItemCommand1(object source, RepeaterCommandEventArgs e)
+        {
+            try
+            {
+                if (!Request.IsSecureConnection)
+                {
+                    if (e.CommandName == "Add")
+                    {
+                        //Not logged in
+                        if (Session["UserID"] == null)
+                        {errorlbl.Text = "Please Sign-in to purchase products";}
+                        else
+                        {Response.Redirect(ConfigurationManager.AppSettings["SecurePath"] + "UL/ShoppingCart.aspx?id=" + e.CommandArgument.ToString());}
+                    }
+                    else
+                    {Response.Redirect("ProductDetails.aspx?id=" + e.CommandArgument.ToString());}
+                }
+            }
+            catch (Exception ex)
+            {errorlbl.Text = "Error : " + ex.Message;}
+
 
         }
     }

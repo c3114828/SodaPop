@@ -10,60 +10,42 @@
 namespace SodaPop.UL {
     
     
-    public partial class Products {
+    public partial class AdminLogin {
         
         /// <summary>
-        /// SearchBox control.
+        /// emailTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel SearchBox;
+        protected global::System.Web.UI.WebControls.TextBox emailTxtBx;
         
         /// <summary>
-        /// searchBar control.
+        /// passwordTxtBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchBar;
+        protected global::System.Web.UI.WebControls.TextBox passwordTxtBx;
         
         /// <summary>
-        /// btn_search control.
+        /// RegisterLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btn_search;
+        protected global::System.Web.UI.WebControls.HyperLink RegisterLbl;
         
         /// <summary>
-        /// errorlbl control.
+        /// logInBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label errorlbl;
-        
-        /// <summary>
-        /// btn_show control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_show;
-        
-        /// <summary>
-        /// repeater1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeater1;
+        protected global::System.Web.UI.WebControls.Button logInBtn;
     }
 }

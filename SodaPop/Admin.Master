@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="SodaPop.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/CSS/Main.css"  runat="server">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+          	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container"> 
+	<!--container inside navbar so its not constricing the
+		actual navbar itself, instead resticing the content in the navbar -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> <!-- html making span bar design -->
+	        <span class="icon-bar"></span>
+	      </button>
+			<a href="#" class="navbar-brand">SODAPOP</a>
+      
+
+		</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo"> 
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+                     <li>
+                       <%-- <asp:Menu ID="productsMenu" runat="server">
+                             <LevelMenuItemStyles>
+                                <asp:MenuItemStyle CssClass="main_menu" HorizontalPadding="15px" />
+                                <asp:MenuItemStyle CssClass="level_menu" />
+                            </LevelMenuItemStyles>
+                            <items>
+                                    <asp:MenuItem NavigateUrl="~/UL/Products.aspx" Text="Products" Value="Products">
+                                        <asp:MenuItem NavigateUrl="~/UL/Products.aspx" Text="Cola" Value="Cola">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/UL/Products.aspx" Text="Lemonade" Value="Lemonade">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/UL/Products.aspx" Text="Creaming Soda" Value="Creaming Soda">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/UL/Products.aspx" Text="Classics" Value="Classics">
+                                        </asp:MenuItem>
+                                    </asp:MenuItem>
+                            </items>
+                        </asp:Menu>--%>
+                    </li>
+                    <li class="dropdown">
+                    <a href="~/UL/Products.aspx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                        <!--Menu System for dropdown-->
+                       
+	                      <ul class="dropdown-menu">
+	                        <li><a href="#">Cola</a></li>
+	                        <li><a href="#">Classics</a></li>
+	                        <li><a href="#">Creaming soda</a></li>
+	                        <li role="separator" class="divider"></li>
+	                        <li><a href="#">Separated link</a></li>
+	                        <li role="separator" class="divider"></li>
+	                        <li><a href="#">One more separated link</a></li>
+	                      </ul>
+	                  
+
+                    </li>
+					
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					
+					<%--<li><a href="LoginPage.aspx">Login</a></li>--%>
+                   <li> <asp:HyperLink id="loggedInLbl" 
+                      NavigateUrl="~/UL/LoginPage.aspx"
+                      Text="Log In"
+                      runat="server"/> 
+                    </li>
+                    <li><a href="LogOut.aspx">Log Out</a></li> <%--this will be a button --%>
+				</ul>
+			</div>
+	</div>
+	</nav>
+	<div class="container">
+		<div class="jumbotron">
+
+			<h1><i class="fa fa-camera-retro" aria-hidden="true"></i> SodaPop<a href="Main.aspx"><asp:Image ID="imgLogo" runat="server" ImageUrl="~/IMG/soda-bottle.png" AlternateText="SodaPop Logo" BorderStyle="NotSet" Height="168px" Width="135px" ImageAlign="Right" /></a>
+            </h1>	
+			<p>One stop for all your fizz</p>
+            <%--<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>--%>
+
+            <%--search bar--%>
+
+		</div>
+		<%--<div class="row"> images
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> <!-- resizes images to fit column -->
+					<img src="https://source.unsplash.com/ZItuB3bb8aE"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> 
+					<img src="https://source.unsplash.com/ndN00KmbJ1c"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/3l3RwQdHRHg"> 
+				</div>
+			</div> --%>
+
+			<!-- 2nd row -->
+			<%--<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> <!-- resizes images to fit column -->
+					<img src="https://source.unsplash.com/IE_sifhay7o"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> 
+					<img src="https://source.unsplash.com/V4ZksNimxLk"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/3N5ccOE3wGg"> 
+				</div>
+			</div> --%>
+
+			<!-- 3rd row -->
+			<%--<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> <!-- resizes images to fit column -->
+					<img src="https://source.unsplash.com/0QhXAI5bFVM"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"> 
+					<img src="https://source.unsplash.com/KeUKM5N-e_g"> 
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/DRKknUyra0Y"> 
+				</div>
+			</div> --%>
+			
+			
+		</div>
+	</div>
+
+
+		<!-- jquery cdn -->
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<!--BOOTSTRAP JAVASCRIPT PLUGIN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+       <%-- </div>--%>
+    </form>
+</body>
+</html>

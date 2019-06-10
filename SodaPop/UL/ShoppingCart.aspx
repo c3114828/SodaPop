@@ -9,7 +9,7 @@
     <div Class="content">
           
                  <asp:GridView ID="CartLst" runat="server" AutoGenerateColumns="False" GridLines="Horizontal" CellPadding="2"
-                    ItemType="UL.Classes.Products" SelectMethod="GetShoppingCartItems" onrowcommand="CartList_RowCommand">
+                    ItemType="UL.Products" SelectMethod="GetShoppingCartItems" onrowcommand="CartList_RowCommand">
                 <%-- set the content of each rows of the gridview (the list of data we need for each cart items) --%>
                 <Columns>
                     <asp:BoundField DataField="ProductID" HeaderText="ID"/>

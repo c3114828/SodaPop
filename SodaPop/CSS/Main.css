@@ -22,7 +22,7 @@ body {
 
 /*content keeps everything within the body and controls the white box of the container*/
 .content {
-    width: 50%;
+    width: 105%;
     min-height: 10px;
     margin: 0 auto;
     overflow-y: auto;

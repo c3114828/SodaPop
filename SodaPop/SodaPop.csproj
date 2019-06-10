@@ -123,10 +123,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="BL\UserAccountBL.cs" />
+    <Compile Include="DAL\UsersDAL.cs" />
+    <Compile Include="DL\UserAccount.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -165,6 +174,27 @@
     </Compile>
     <Compile Include="UL\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminConfirmed.aspx.cs">
+      <DependentUpon>AdminConfirmed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminConfirmed.aspx.designer.cs">
+      <DependentUpon>AdminConfirmed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdmingAccountManagement.aspx.cs">
+      <DependentUpon>AdmingAccountManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdmingAccountManagement.aspx.designer.cs">
+      <DependentUpon>AdmingAccountManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Default2Main.aspx.cs">
       <DependentUpon>Default2Main.aspx</DependentUpon>
@@ -255,6 +285,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="MasterPage.Master" />
     <Content Include="Main.Master" />
+    <Content Include="Admin.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -268,6 +299,9 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Default.aspx" />
     <Content Include="UL\About.aspx" />
+    <Content Include="UL\AdminConfirmed.aspx" />
+    <Content Include="UL\AdmingAccountManagement.aspx" />
+    <Content Include="UL\AdminLogin.aspx" />
     <Content Include="UL\Default2Main.aspx" />
     <Content Include="UL\LoginPage.aspx" />
     <Content Include="UL\LogOut.aspx" />
@@ -285,17 +319,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="BL\" />
     <Folder Include="DL\Models\" />
   </ItemGroup>
   <ItemGroup>
